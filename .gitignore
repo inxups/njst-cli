@@ -1,0 +1,22 @@
+# ── 凭据 / 会话 / 抓包 / 个人数据：一律不进仓库 ──
+# 运行时状态目录（含 CASTGC 会话票据、一卡通 etToken、VPN TWFID、真实课表）
+.state/
+# 抓包与导出
+captures/
+*.har
+schedule.json
+njts-schedule.ics
+# 真实数据快照
+kb.json
+kbpage.html
+last-schedule.json
+power.jsonl
+
+# 构建产物
+*.zip
+*.tar.gz
+node_modules/
+.DS_Store
+
+# zju-connect 二进制（15MB，第三方，不入库；用 scripts/fetch-vpn.sh 重新下载）
+tools/

@@ -1,0 +1,33 @@
+{
+  "name": "njts-cli",
+  "version": "0.1.0",
+  "description": "南京特殊教育师范学院校园命令行工具：一卡通余额/电费、课表成绩、请假进度。为 AI agent 与脚本设计，输出 JSON。",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "njts": "bin/njts.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "data",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "smoke": "node bin/njts.js status"
+  },
+  "keywords": [
+    "njts",
+    "南京特殊教育师范学院",
+    "campus",
+    "agent-skill",
+    "claude-code",
+    "pi"
+  ],
+  "dependencies": {}
+}
